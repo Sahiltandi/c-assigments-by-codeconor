@@ -922,6 +922,24 @@ else
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Nested If Assignments 
 
 // ✅ 1. Check if a person is eligible to vote. 
@@ -1360,6 +1378,28 @@ else
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// four question by vikas sir
+
 // 1
 /*
 Gaming Level Unlock — Read player score and boss-defeated flag (y/n).
@@ -1495,6 +1535,26 @@ else
 {
     Console.WriteLine("Ticket price = ₹200");
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1853,7 +1913,7 @@ Console.Write("Is Data Saver ON? (on/off): ");
 
 if (speed >= 25)
 {
-    if (dataSaver.ToLower() == "on")
+    if (dataSaver == "on")
     {
         Console.WriteLine("Video Quality: 720p");
     }
@@ -2018,6 +2078,28 @@ else
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 15/07/2026
 
 // set1
 
@@ -2277,7 +2359,14 @@ else if (num<0 && num % 2 == 0)
 
 
 //Set 2
+using System;
+using System.ComponentModel;
+using System.Globalization;
 using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
+using System.Security.Cryptography;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 //1.Grade from Five Subjects
 // Take the marks of 5 subjects. Find the average. Then print the grade: A(90 and above),
@@ -2305,32 +2394,32 @@ s5 = int.Parse(Console.ReadLine());
 
 if (s1 < 0 || s1 > 100 || s2 < 0 || s2 > 100 || s3 < 0 || s3 > 100 || s4 < 0 || s4 > 100 || s5 < 0 || s5 > 100)
 {
-    Console.WriteLine("Invalid Input");
+Console.WriteLine("Invalid Input");
 }
 else
 {
-     average = (s1 + s2 + s3 + s4 + s5) / 5.0;
+average = (s1 + s2 + s3 + s4 + s5) / 5.0;
 
-    if (average >= 90)
-    {
-        Console.WriteLine("Grade A");
-    }
-    else if (average >= 80)
-    {
-        Console.WriteLine("Grade B");
-    }
-    else if (average >= 70)
-    {
-        Console.WriteLine("Grade C");
-    }
-    else if (average >= 60)
-    {
-        Console.WriteLine("Grade D");
-    }
-    else
-    {
-        Console.WriteLine("Grade F");
-    }
+if (average >= 90)
+{
+Console.WriteLine("Grade A");
+}
+else if (average >= 80)
+{
+Console.WriteLine("Grade B");
+}
+else if (average >= 70)
+{
+Console.WriteLine("Grade C");
+}
+else if (average >= 60)
+{
+Console.WriteLine("Grade D");
+}
+else
+{
+Console.WriteLine("Grade F");
+}
 }*/
 
 
@@ -2350,15 +2439,15 @@ int bill;
 
 if (units <= 100)
 {
-    bill = units * 5;
+bill = units * 5;
 }
 else if (units <= 200)
 {
-    bill = (100 * 5) + ((units - 100) * 7);
+bill = (100 * 5) + ((units - 100) * 7);
 }
 else
 {
-    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10);
+bill = (100 * 5) + (100 * 7) + ((units - 200) * 10);
 }
 
 Console.WriteLine($"Total Electricity Bill = ₹ {bill}" );*/
@@ -2380,23 +2469,23 @@ double tax;
 
 if (income <= 250000)
 {
-    tax = 0;
+tax = 0;
 }
 else if (income <= 500000)
 {
-    tax = (income - 250000) * 0.05;
+tax = (income - 250000) * 0.05;
 }
 else if (income <= 1000000)
 {
-    tax = (250000 * 0.05) + ((income - 500000) * 0.20);
+tax = (250000 * 0.05) + ((income - 500000) * 0.20);
 }
 else
 {
-    tax = (250000 * 0.05) + (500000 * 0.20) + ((income - 1000000) * 0.30);
+tax = (250000 * 0.05) + (500000 * 0.20) + ((income - 1000000) * 0.30);
 }
 
 Console.WriteLine("Total Tax = ₹" + tax);
-    */
+*/
 
 
 
@@ -2419,19 +2508,19 @@ c = int.Parse(Console.ReadLine());
 
 if (a + b <= c || a + c <= b || b + c <= a)
 {
-    Console.WriteLine("Not a Triangle");
+Console.WriteLine("Not a Triangle");
 }
 else if (a == b && b == c)
 {
-    Console.WriteLine("Equilateral Triangle");
+Console.WriteLine("Equilateral Triangle");
 }
 else if (a == b || b == c || a == c)
 {
-    Console.WriteLine("Isosceles Triangle");
+Console.WriteLine("Isosceles Triangle");
 }
 else
 {
-    Console.WriteLine("Scalene Triangle");
+Console.WriteLine("Scalene Triangle");
 }
 */
 
@@ -2444,4 +2533,2412 @@ else
 
 
 
+//6.Calculator Menu
+//Show a menu: 1 Add, 2 Subtract, 3 Multiply, 4 Divide. Take the user's choice and two numbers.
+//Use ladder if to do the correct operation. For divide, also check that the second number is not zero,
+//else print "Cannot divide by zero".
+
+
+
+
+//7. Water Bill by Slab
+//Take water units used. First 10 units are free, 11 to 30 units cost 2 rupees each, 31 to 60 units cost 4 rupees each,
+//and above 60 units cost 6 rupees each. Also add a fixed line charge of 50 rupees. Print the total bill.
+
+
+//8. Roots of a Quadratic Equation
+//Take the values a, b, and c for the equation ax² + bx + c = 0. Find the discriminant d = b² - 4ac. If d is greater than 0,
+//print "Two Real Roots" and show both roots. If d is 0, print "One Real Root" and show it. If d is less than 0, print
+//"No Real Roots".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 16/07/2026
+
+//  && or assignment
+
+
+//   1           Write a program to check if a number lies between 10 and 20. 
+// Example: Input → 15 → Output: "Number is between 10 and 20"
+
+/*
+int num;
+
+Console.WriteLine("Enter a number:");
+num = int.Parse(Console.ReadLine());
+
+if (num >= 10 && num <= 20)
+{
+Console.WriteLine("Number is between 10 and 20");
+}
+
+*/
+
+
+// 2 Write a program to take two numbers and print "Valid" only if both are even. 
+//Example: Input → 4 and 6 → Output: "Valid"Write 
+/*
+int a, b;
+Console.WriteLine("Enter number 1:");
+a = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number 2:");
+b = int.Parse(Console.ReadLine());
+
+if ( a %2 == 0  && b %2 ==0)
+{
+Console.WriteLine("Both number is Even.");
+}
+else
+{
+Console.WriteLine("Not Even.");
+}*/
+
+
+// 3 Write a program to check if a character is a vowel (a, e, i, o, u). 
+//Example: Input → 'i' → Output: "Vowel 
+
+
+/*
+char letter;
+
+Console.WriteLine("Enter a letter:");
+letter = char.Parse(Console.ReadLine().ToUpper());
+
+
+if (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U'  )
+{
+Console.WriteLine("Vowel");
+}
+else
+{
+Console.WriteLine("Consonant");
+}
+*/
+
+//  5  Write a program to check if the age is more than 18 and less than 60. 
+// Example: Input → 25 → Output: "Eligible" 
+
+/*
+int age;
+
+Console.WriteLine("Enter your Age:");
+age = int.Parse(Console.ReadLine());
+
+if (age >= 18 && age <= 60)
+{
+Console.WriteLine("Eligible");
+}*/
+
+
+// 6 Write a program that takes three subject marks and prints "Pass" only if all are above 33. 
+// Example: Input → 45, 67, 89 → Output: "Pass" 
+/*
+double subject1, subject2, subject3;
+
+Console.WriteLine("Enter marks of Subject 1:");
+subject1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter marks of Subject 2:");
+subject2 = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Enter marks of Subject 3:");
+subject3 = double.Parse(Console.ReadLine());
+
+if ( subject1 >= 33 && subject2 >=33 && subject3 >=33)
+{
+Console.WriteLine("Pass");
+}
+else
+{
+Console.WriteLine("Fail");
+}*/
+
+// 7 Write a program to check if a number is either divisible by 3 or divisible by 5. 
+// Example: Input → 15 → Output: "Divisible"   
+/*
+int num;
+
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+if (num %3 == 0  || num %5 == 0)
+{
+Console.WriteLine("Divisible ");
+}
+else
+{
+Console.WriteLine("Not Divisible");
+}*/
+
+
+// 8 allowedWrite a program to check if a number is less than 0 or greater than 100. 
+//Example: Input → -5 → Output: "Number is out of range" 
+
+/*
+int num;
+
+
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+if  (num <0 || num > 100)
+{
+Console.WriteLine("Number is out of Range.");
+}*/
+
+
+// 9 Write a program to check if a person is allowed entry only if their age is between 21 and 60. 
+//Example: Input → 30 → Output: "Entry allowed" 
+/*
+
+int age;
+
+Console.WriteLine("Enter your Age:");
+age = int.Parse(Console.ReadLine());
+
+if ( age >=21 || age <=60)
+{
+Console.WriteLine("Entry allowed.");
+}
+else
+{
+Console.WriteLine("Entry not allowed.");
+}*/
+
+
+// 10 Write a program to check if a person is eligible for a senior citizen scheme (age should be 60 or income less than 2 lakhs). 
+//Example: Input → Age 65, Income 5 lakhs → Output: "Eligible" 
+
+/*
+int age;
+double income;
+
+Console.WriteLine("Enter your age:");
+age = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter your income,in lakhs:");
+income = double.Parse(Console.ReadLine());
+
+
+if (age >=60 && income >= 200000)
+{
+Console.WriteLine("Eligible");
+
+}
+else
+{
+Console.WriteLine("Not Eligible");
+}*/
+
+
+// 11 Write a program to accept marks in English and Math and print "Scholarship Granted" if both are above 90. 
+// Example: Input → English 92, Math 95 → Output: "Scholarship Granted" 
+
+
+/*
+double eng, mth;
+
+Console.WriteLine("Enter Maths marks:");
+mth = double.Parse(Console.ReadLine());
+
+
+Console.WriteLine("Enter English marks:");
+eng = double.Parse(Console.ReadLine());
+
+if (eng > 90 && mth >90)
+{
+Console.WriteLine("Scholarship Granted");
+}
+else
+{
+Console.WriteLine("Scholarship not Granted.");
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 17/07/2026
+/*
+1.Print numbers from 1 to 10.
+2. Print even numbers from 2 to 20.
+3. Print the squares of numbers from 1 to 10.
+4. Print the numbers from 10 to 1 in reverse order.
+5. Print the first 10 multiples of 5.
+6. Print all odd numbers between 1 and 30.
+7. Print the table of 7 (i.e., 7, 14, 21, ..., up to 70).
+8.Print numbers from 50 to 100 with a step of 5.
+9. Print the sum of numbers from 1 to 100.
+
+*/
+
+
+
+//  1.Print numbers from 1 to 10.
+/*
+for (int i = 1;  i <= 10; i++)
+{
+Console.WriteLine( $"{i}");
+}*/
+
+
+// 2. Print even numbers from 2 to 20.
+/*
+
+for (int i = 2; i <= 20; i++)
+{
+if (i %2 == 0)
+{
+Console.WriteLine($"{i}");
+}
+}*/
+
+
+// 3. Print the squares of numbers from 1 to 10.
+/*
+for (int i = 1; i <= 10; i++)
+{
+int square=i*i;
+Console.WriteLine("Square numbers:");
+Console.WriteLine($"{i}={square}");
+}
+*/
+
+
+// 4. Print the numbers from 10 to 1 in reverse order.
+/*
+for (int i = 10; i >= 1; i--)
+{
+Console.WriteLine($"{i}");
+}
+*/
+
+// 5. Print the first 10 multiples of 5.
+
+/*
+for (int i = 1; i <= 10; i++)
+{
+Console.WriteLine($"{i *5}");
+}*/
+
+
+//6. Print all odd numbers between 1 and 30.
+
+/*
+for (int i = 1; i <=30; i++)
+{
+if (i %2 !=0)
+Console.WriteLine($"{i }");
+}
+*/
+
+
+// 7. Print the table of 7 (i.e., 7, 14, 21, ..., up to 70).
+/*
+
+for (int i = 1; i <= 10; i++)
+{
+Console.WriteLine($"{i * 7}");
+}
+*/
+
+//8.Print numbers from 50 to 100 with a step of 5.
+
+
+/*
+for (int i = 50; i <= 100; i+=5)
+{
+Console.WriteLine($"{i}");
+}
+*/
+
+//9. Print the sum of numbers from 1 to 100.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 20/07/2026
+
+// while loop
+
+//1. Print all even numbers from 8 to 20 using a while loop 
+//Input: None
+//Output: 8 10 12 14 16 18 20
+//Explanation: Even numbers are those that can be divided by 2 without a remainder.
+//This program starts from 8 and prints every even number up to 20 using a while loop. 
+/*
+
+int number = 8;
+while (number <=20)
+{
+    Console.WriteLine(number + " ");
+    number += 2;
+}
+
+*/
+
+
+//2. Find and display the sum of digits of a given number using a while loop 
+//Input: 345
+//Output: Sum of digits = 12
+//Explanation: The digits of 345 are 3, 4, and 5. When we add them: 3 + 4 + 5 = 12.This is called the sum of digits.	
+
+
+/*
+int num;
+Console.WriteLine("Enter a number:");
+num = int.Parse(Console.ReadLine());
+int digit;
+int sum = 0;
+
+while (num> 0)
+{
+    digit = num %10;
+    sum = sum + digit;
+    num = num /10;
+}
+Console.WriteLine($" Sum of digit: {sum}");
+*/
+
+
+//3. Reverse a given number using a while loop 
+//Input: 1234
+//Output: Reversed number = 4321
+//Explanation: Reversing a number means writing its digits in the opposite order. 1234 becomes 4321. 
+/*
+int number = 1234;
+int reminder;
+int newnumber = 0;
+
+while ( number != 0 )
+{
+    reminder = number%10;
+    newnumber = newnumber * 10 + reminder;
+    number = number/10;
+}
+Console.WriteLine(newnumber);*/
+
+
+
+
+//4. Check whether a given number is a palindrome using a while loop 
+//Input: 121
+//Output: 121 is a palindrome 
+
+
+//Input: 123 
+//Output: 123 is not a palindrome
+//Explanation: A palindrome number reads the same forward and backward.
+//For example, 121 reversed is still 121, so it’s a palindrome. But 123 becomes 321, so it is not. 
+
+/*
+int input;
+
+Console.WriteLine("Enter number:");
+input = int.Parse(Console.ReadLine());
+
+
+*/
+
+
+
+
+/*
+5.Print the multiplication table of a number up to 10 using a while loop
+Input: 7
+Output:
+7 x 1 = 7 
+7 x 2 = 14 
+7 x 3 = 21 
+7 x 4 = 28 
+7 x 5 = 35 
+7 x 6 = 42 
+7 x 7 = 49 
+7 x 8 = 56 
+7 x 9 = 63 
+7 x 10 = 70 
+
+Explanation: This prints the multiplication table of the number entered by the user. 
+The loop runs 10 times, multiplying the number by 1 to 10.
+
+*/
+/*
+int number;
+Console.WriteLine("Enter which table you want");
+number = int.Parse(Console.ReadLine());
+int i=1;
+
+
+while (i <=10)
+{
+    Console.WriteLine($" {number} * {i} = {number * i}");
+    i++;
+}
+*/
+
+
+
+
+
+
+
+//6. Find the sum of the first N natural numbers using a while loop 
+//Input: N = 5
+//Output: Sum = 15
+//Explanation: Natural numbers are positive whole numbers.
+//The first 5 natural numbers are 1, 2, 3, 4, 5. Their sum is 1+2+3+4+5 = 15. 
+/*
+int num, sum = 0, count = 1;
+Console.WriteLine("Enter number to  find the sum of the natural numbers");
+num = int.Parse(Console.ReadLine());
+
+while ( count <= num )
+{
+    sum = sum + count;
+    count++;
+}
+Console.WriteLine($"Sum = {sum}");
+
+
+*/
+
+
+
+/*
+7.Find the largest digit in a given number using a while loop
+Input: 4963
+Output: Largest digit = 9
+Explanation: The digits in 4963 are 4, 9, 6, 3. The largest one is 9. 
+
+ */
+/*
+
+int num;
+Console.WriteLine("Enter number");
+num = int.Parse(Console.ReadLine());
+int digit;
+int largest = 0;
+
+while (num > 0)
+{
+    digit = num % 10;
+    if (digit > largest)
+    {
+        largest = digit;
+    }
+
+    num = num / 10;
+}
+Console.WriteLine($"Largest digit {largest}");
+
+*/
+
+
+
+
+
+
+
+
+/*
+8. Print all numbers between 1 and 100 that are divisible by both 3 and 5 using a while loop
+Input: None
+Output: 15 30 45 60 75 90
+Explanation: A number divisible by both 3 and 5 is a multiple of 15. This program finds and prints those numbers from 1 to 100. 
+*/
+/*
+int number = 1;
+
+while (number <=100)
+{
+    if (number %3 ==0 && number %5 ==0)
+        Console.WriteLine(number);
+    number++;
+}
+
+
+*/
+
+
+
+
+/* 
+
+9. Calculate the power of a number (base^exponent) using a while loop
+Input: Base = 2, Exponent = 5
+Output: 2 ^ 5 = 32
+Explanation: 2 to the power of 5 means multiplying 2 by itself 5 times: 2×2×2×2×2 = 32.
+*/
+/*
+int bas, expo,result=1,count=0;
+
+Console.WriteLine("Enter Base number:");
+bas = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter Exponent for number:");
+expo = int.Parse(Console.ReadLine());
+
+while (count<expo)
+{
+    result = result * bas;
+    count++;
+
+}
+Console.WriteLine($"{bas} ^ {expo} = {result}");
+*/
+
+
+/*
+10.Calculate the power of a number (base^exponent) using a while loop
+Input: 48261
+Output: Sum of even digits = 16 
+Explanation: The even digits in 48261 are 4, 8, 2, and 2 (from the 6). Sum = 4 + 8 + 2 + 2 = 16.
+*/
+
+
+
+
+
+
+
+/*
+
+11.Find the product of all digits in a number using a while loop
+Input: 1234
+Output: Product of digits = 24
+Explanation: The digits are 1, 2, 3, 4. Their product means 1 × 2 × 3 × 4 = 24. "Product" means multiplying all the digits together. 
+
+ */
+
+
+/*
+int num,digit,product=1;
+
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+while (num > 0)
+{
+    digit=num%10;
+    product= product*digit;
+    num = num/10;
+
+
+}
+Console.WriteLine(product);
+*/
+
+
+/*
+12. Display the first N odd numbers using a while loop
+Input: N = 5
+Output: 1 3 5 7 9
+Explanation: Odd numbers are numbers that are not divisible by 2. The first 5 odd numbers are 1, 3, 5, 7, 9. 
+*/
+
+/*
+int input , number=1, count=0;
+
+Console.WriteLine("Enter how many  display the first  odd numbers:");
+input = int.Parse(Console.ReadLine());
+
+while (count < input)
+{
+    Console.WriteLine(number);
+    number = number + 2;
+    count++;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+//      Do While Questions 
+
+
+/*
+1. Keep asking the user to enter a password until the correct one is entered using a do -while loop
+Input: (User enters: 1234, then admin123) 
+Output:
+Wrong password. Try again. 
+Correct password entered! 
+Explanation: This program keeps asking for the password until the user enters the correct one (like "admin123"). The loop runs at least once and checks every time if the entered password is correct. 
+*/
+/*
+string password;
+
+do
+{
+    Console.WriteLine("enter password");
+    password = Console.ReadLine();
+    if (password == "admin123")
+    {
+        Console.WriteLine("Correct");
+    }
+    else
+    {
+        Console.WriteLine("wrong pass try again");
+    }
+
+} while (password != "admin123");*/
+
+
+
+
+
+/*
+2. Keep adding numbers entered by the user until the user enters 0 using a do -while loop
+Input: 5, 3, 2, 0
+Output: Total sum = 10
+Explanation: The user keeps entering numbers, and the program adds them. When the user types 0, the loop ends and shows the final sum. 
+*/
+
+
+/*
+int num;
+Console.WriteLine("Enter a number:");
+num = int.Parse(Console.ReadLine());
+int digit;
+int sum = 0;
+
+while (num > 0)
+{
+    digit = num % 10;
+    sum = sum + digit;
+    num = num / 10;
+}
+Console.WriteLine($" Sum of digit: {sum}");
+*/
+
+
+/*
+int number;
+int sum = 0;
+do
+{
+    Console.WriteLine("Enter number:");
+    number =int.Parse(Console.ReadLine());
+    
+    
+      sum = sum + number;
+
+    
+
+
+}while (number != 0);
+
+Console.WriteLine(sum);
+*/
+
+
+
+/*
+3. Take a number from the user and keep asking until a positive number is entered using a do -while loop
+Input: -5, 0, -1, 7
+Output: You entered a positive number: 7
+Explanation: This loop keeps asking for input until the user finally gives a number greater than 0. Negative and zero values are not accepted. 
+*/
+/*
+int num;
+
+do
+{
+    Console.WriteLine("Enter number:");
+    num = int.Parse(Console.ReadLine());
+} while (num <= 0);
+Console.WriteLine($"Positive number {num}");
+
+
+*/
+
+
+
+/*
+4. Calculate the sum of squares of numbers from 1 to N using a do -while loop
+Input: N = 4
+Output: Sum of squares = 30
+Explanation: The squares are: 1² = 1, 2² = 4, 3² = 9, 4² = 16
+Total = 1 + 4 + 9 + 16 = 30
+*/
+
+
+/*
+int number;
+Console.WriteLine("Enter Number:");
+number = int.Parse(Console.ReadLine());
+
+int i = 1;
+int sum = 0;
+do
+{ 
+    sum = sum + (i * i);
+    i++;
+}while (i <= number);
+Console.WriteLine($"Sum is: {sum}");*/
+
+
+
+/*
+5.Find the average of numbers entered by the user until they enter -1 using a do -while loop
+Input: 10, 20, 30, -1
+Output: Average = 20.0
+Explanation: The loop keeps collecting numbers and calculates the average at the end. -1 is used to stop the loop and is not included in the average. 
+*/
+/*
+int num,numcount=0,totalnum=0;
+
+do
+{
+    Console.WriteLine("Enter any number:");
+    num = int.Parse(Console.ReadLine());
+    totalnum = totalnum + num;
+    numcount =  numcount+1;
+
+    if (num == -1)
+    {
+        Console.WriteLine($"avarage is {totalnum/numcount}");
+    }
+
+    
+
+}
+while (num != -1);
+
+*/
+/*
+6. Simulate a simple login system that gives the user 3 attempts using a do -while loop
+Input: (Wrong password 2 times, then correct password) 
+Output:
+Attempt 1: Wrong password 
+Attempt 2: Wrong password 
+Attempt 3: Login successful 
+Explanation: This program allows the user to enter the password 3 times. If the correct password is entered, it exits early. 
+*/
+/*
+string password = "admin123",userpass="";
+
+int attempt=0;
+
+Console.WriteLine("Enter Password:");
+userpass = Console.ReadLine();
+do
+{
+   
+    attempt = attempt + 1;
+
+    if (password != userpass)
+    {
+        Console.WriteLine($"Attempt: {attempt} Try again.");
+        userpass = Console.ReadLine();
+    }
+    if (userpass == password)
+    {
+        Console.WriteLine("Login successful.");
+    }
+    if (attempt == 3 )
+    {
+        Console.WriteLine("attempt full");
+        break;
+    }
+
+
+} while (userpass != "admin123");
+
+*/
+
+
+
+/*
+7. Keep multiplying a number by 2 until it becomes greater than 1000 using a do -while loop
+Input: Start = 5
+Output: 5 10 20 40 80 160 320 640 1280
+Explanation: Starting from 5, the number is doubled each time. The loop stops when the number becomes more than 1000. 
+*/
+
+/*
+int num;
+
+
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+do
+{
+    Console.Write(num + " " );
+    num = num * 2;
+
+}while(num <= 1000);
+Console.WriteLine(num);
+*/
+
+
+/*
+8. Keep asking the user to input a character until they input “exit” and check if it is a vowel or consonant using a do -while loop
+Input: a, b, e, exit 
+Output: 
+'a' is a vowel
+'b' is a consonant
+'e' is a vowel
+Explanation: The loop continues until the user types "exit". For each letter, the program checks if it is a vowel (a, e, i, o, u) or a consonant. 
+*/
+
+/*
+string alpha;
+
+do
+{
+    Console.WriteLine("Enter any word, or type 'exit' to stop");
+    alpha = Console.ReadLine();
+
+    if (alpha != "Exit")
+    {
+        char ch = alpha[0];
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+        {
+            Console.WriteLine("'" + ch + "' is a vowel");
+        }
+        else
+        {
+            Console.WriteLine("'" + ch + "' is a consonant");
+        }
+
+    }
+}
+while (alpha != "exit");*/
+
+/*
+9. Ask the user to enter 5 numbers one by one using a do -while loop
+Input: 3, 6, 2, 9, 4
+Output: You entered: 3 6 2 9 4
+Explanation: The program uses a do-while loop to collect exactly 5 numbers from the user and then displays them. 
+*/
+/*
+int num ,count=1;
+string output = "you entered";
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+do
+{
+
+        Console.WriteLine("Enter number:");
+         num = int.Parse(Console.ReadLine());
+    output = output + " " + num;
+   
+    count++;
+   
+} while (count != 6);
+
+Console.WriteLine($" You Entered: {output}" );
+*/
+/*
+10. Keep asking the user to enter an even number. If odd, ask again using a do -while loop
+Input: 3, 7, 10
+Output:
+3 is odd.Try again. 
+7 is odd.Try again. 
+10 is even.Thank you!
+Explanation: The loop continues until the user enters a number that is divisible by 2 (even number). */
+/*
+int num;
+
+do
+{
+    Console.WriteLine("Enter number:");
+    num = int.Parse(Console.ReadLine());
+    if (num % 2 == 0)
+    {
+        Console.WriteLine($"{num} is Even, Thank you!");
+    }
+    else if(num % 2 != 0)
+    {
+       
+        Console.WriteLine($"{num} id odd. Try again.");
+    }
+   
+
+}while (num %2 != 0);
+*/
+
+
+
+
+
+
+/*
+
+        int units;
+        double bill = 0, finalBill;
+
+        Console.WriteLine("Enter electricity units: ");
+        units = int.Parse(Console.ReadLine());
+        if (units <= 100)
+        {
+            bill = units * 2;
+        }
+        else if (units <= 200)
+        {
+            bill = (100 * 2) + ((units - 100) * 4);
+        }
+        else if (units <= 500)
+        {
+            bill = (100 * 2) + (100 * 4) + ((units - 200) * 8);
+        }
+        else if (units <= 1000)
+        {
+            bill = (100 * 2) + (100 * 4) + (300 * 8) + ((units - 500) * 10);
+        }
+        else
+        {
+            bill = (100 * 2) + (100 * 4) + (300 * 8) + (500 * 10) + ((units - 1000) * 10);
+        }
+
+        
+        finalBill = bill + (bill * 0.10);
+
+        Console.WriteLine($"Bill before subsidy = {bill}" );
+        Console.WriteLine($"Bill after 10% subsidy = {finalBill}");
+ */
+/*
+
+int num, orginal, reverse = 0, reminder;
+
+Console.WriteLine("Enter number:");
+num = int.Parse(Console.ReadLine());
+
+orginal = num;
+
+
+while ( num > 0 )
+{
+    reminder = num % 10;
+    reverse = reverse * 10 + reminder;
+    num = num / 10;
+}
+if ( orginal == reverse)
+{
+    Console.WriteLine("Palindrome");
+}
+else
+{
+    Console.WriteLine("Not Palindrome");
+}*/
+
+//Find the absolute value of a number.
+/*
+int num;
+Console.WriteLine("Enter number :");
+num = int.Parse(Console.ReadLine());
+
+if (num < 0)
+{
+    num = -num;
+    Console.WriteLine(num);
+}
+else
+{
+    Console.WriteLine(num);
+}*/
+
+
+//Print numbers from 1 to 10.
+// using while loop
+/*
+int num=1;
+
+while(num <10)
+{
+    Console.WriteLine(num);
+    num++;
+
+}
+*/
+/*
+int num=1;
+
+while( num <=100)
+{
+    if( num % 2 == 0)
+    Console.WriteLine(num);
+    num++;
+}
+
+*/
+
+
+
+
+// 23/07/2026
+
+/*
+int unit ;
+Console.WriteLine("Enter bill unit:");
+unit = int.Parse(Console.ReadLine());
+
+double bill = 0;
+
+if (unit <=100)
+{
+    bill = 100 * 2;
+}
+else if (unit <=200)
+{
+    bill = (100 * 2) + ((unit - 100) * 4);
+}
+else if (unit <=500)
+{
+    bill = (100 * 2) + (100 * 4) + ((unit - 200) * 8);
+}
+else  
+{
+    bill = (100 * 2) + (100 * 4) +(300 * 8)+ ((unit - 500) *10);
+}
+ if (bill >1000)
+{
+    bill = bill + (bill * 0.10);
+}
+
+Console.WriteLine(bill);*/
+
+
+/*
+Input:
+Units Consumed
+Customer Type: Domestic / Commercial
+Payment Status: OnTime / Late
+
+
+Unit Slabs:
+1–100 = ₹2 / unit
+101–200 = ₹4 / unit
+201–500 = ₹8 / unit
+Above 500   = ₹10/unit
+ 
+Rules:
+Domestic:
+Fixed charge = ₹100
+
+
+Commercial:
+Fixed charge = ₹250
+  Add 20% commercial charge
+ 
+If bill > ₹1000:
+  Add 10% surcharge
+ 
+If bill > ₹5000:
+  Add 15% surcharge instead of 10%
+ 
+If payment is Late:
+  Add ₹200 late fee
+ 
+Output:
+Unit Bill
+Fixed Charge
+Surcharge
+Commercial Charge
+Late Fee
+Final Bill*/
+
+
+
+/*
+int unit;
+
+Console.WriteLine("Units Consumed:");
+unit = int.Parse(Console.ReadLine());
+
+string customertype, paymentstatus;
+
+Console.WriteLine("Domestic or Commercial");
+customertype = Console.ReadLine();
+
+Console.WriteLine("Bill pay ontime or late");
+paymentstatus = Console.ReadLine();
+
+double bill = 0,fixcharge = 0,surcharge=0,late=0,finalbill;
+
+
+if (unit <= 100)
+{
+    bill = 100 * 2;
+}
+else if (unit <= 200)
+{
+    bill = (100 * 2) + ((unit - 100) * 4);
+}
+else if (unit <= 500)
+{
+    bill = (100 * 2) + (100 * 4) + ((unit - 200) * 8);
+}
+else
+{
+    bill = (100 * 2) + (100 * 4) + (300 * 8) + ((unit - 500) * 10);
+}
+
+if ( customertype == "domestic")
+{
+    fixcharge = 100;
+}
+else if (customertype == "commercial")
+{
+    fixcharge = 250;
+}
+if (bill > 1000)
+{
+    surcharge = bill * 0.10;
+    if (bill > 5000)
+    {
+        surcharge = surcharge + (bill * 0.15);
+    }
+
+}
+
+if (paymentstatus == "late")
+{
+    late = 200 ;
+}
+
+finalbill = bill + surcharge + late + fixcharge ;
+
+Console.WriteLine($"Your unit = {unit}");
+Console.WriteLine($"Late fees = {late}");
+Console.WriteLine($"Fixcharge = {fixcharge}");
+Console.WriteLine($"Surcharge = {surcharge}");
+Console.WriteLine($"Final bill = {finalbill}");
+*/
+
+
+
+/*
+2nd is this Input:
+Basic Salary
+Performance Rating: 1–5
+Years of Service
+HRA:
+Basic <= 25000 = 20 %
+25001–50000 = 25 %
+Above 50000 = 30 %
+DA = 10 % of Basic
+Bonus:
+Rating 5 = 15% of Basic
+Rating 4 = 10%
+Rating 3 = 5%
+Below 3  = No Bonus
+Extra Loyalty Bonus:
+Service >= 5 years = ₹5000
+PF = 12 % of Basic
+If Gross Salary > ₹80000:
+Tax = 10 %
+Calculate:
+Basic
+HRA
+DA
+Bonus
+Loyalty Bonus
+Gross Salary
+PF
+Tax
+Net Salary*/
+
+/*
+double basicsalary,hra,da,bonus,extrabonus=0,pf,grosssalary,tax=0,netsalary;
+
+int rating, yearofservice;
+
+Console.WriteLine("Enter your Basic Salary:");
+basicsalary = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter Performance rating 1 to 5:");
+rating = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter year of Service:");
+yearofservice = int.Parse(Console.ReadLine());
+
+//hra
+
+if (basicsalary <= 25000)
+{
+    hra = 0.2 * basicsalary;
+}
+else if (basicsalary >=25001 || basicsalary <=50000)
+{
+    hra = 0.25* basicsalary;
+}
+else
+{
+    hra =0.30* basicsalary;
+}
+
+//da
+
+da = 0.10* basicsalary;
+
+// bonus
+
+if (rating == 5)
+{ 
+    bonus = 0.15 * basicsalary;
+}
+else if (rating == 4)
+{
+    bonus = 0.10 * basicsalary;
+}
+else if(rating == 3)
+{
+    bonus = 0.5 * basicsalary;
+}
+else
+{
+    bonus = 0;
+}
+
+// extrabonus
+
+if (yearofservice >= 5)
+{
+    extrabonus = 5000;
+}
+
+//pf
+
+pf = 0.12 * basicsalary;
+
+// grosssalary
+
+grosssalary = basicsalary + bonus + extrabonus + da +hra;
+
+// tax
+if (grosssalary > 80000)
+{
+    tax = 0.10* grosssalary;
+}
+
+//netsalary
+
+netsalary = grosssalary - pf - tax;
+
+
+Console.WriteLine($"Basic Salary = {basicsalary}");
+Console.WriteLine($"HRA = {hra}");
+Console.WriteLine($"DA = {da}");
+Console.WriteLine($"Bonus = {bonus}");
+Console.WriteLine($"Loyalty Bonus = {extrabonus}");
+Console.WriteLine($"Gross Salary = {grosssalary}");
+Console.WriteLine($"PF = {pf}");
+Console.WriteLine($"Tax = {tax}");
+Console.WriteLine($"Net Salary = {netsalary}");
+
+*/
+
+
+
+
+
+
+// array 
+/*
+int[] marks = {88,99,66,77,55,44,33,22,11 };
+Array.Sort(marks);
+foreach (int i in marks)
+{
+    Console.WriteLine(i);
+}*/
+
+/*
+int[] marks = { 88, 99, 66, 77, 55, 44, 33, 22, 11 };
+Console.WriteLine($" Minimum marks = {marks.Min()}");
+Console.WriteLine($" Maximum marks = {marks.Max()}");
+Console.WriteLine($" Total = {marks.Sum()}");
+Console.WriteLine($" Average = {marks.Average()}");
+*/
+
+/*
+int[] marks = { 88, 99, 66, 77, 55, 44, 33, 22, 11 };
+foreach (int mark in marks)
+{
+    Console.Write(","+ mark );
+}
+bool found;
+int search;
+
+
+Console.WriteLine("Enter element which you find:");
+search = int.Parse(Console.ReadLine());
+
+found = false;
+
+for (int i = 0; i < marks.Length; i++)
+{
+    if (marks[i] == search)
+    {
+        Console.WriteLine($" your element at index = {i}");
+        found = true;
+        break;
+    }
+}
+
+if (!found)
+{
+    Console.WriteLine("Element not found");
+}*/
+
+
+
+
+
+
+
+
+// 24/07/26
+
+// star pattern
+
+
+/*
+ 
+
+1
+12
+123
+1234
+12345
+
+
+*/
+
+
+/*
+for  (int outer = 1; outer <= 5; outer++)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner); 
+    }
+
+    Console.WriteLine();
+}*/
+
+
+/*
+  
+  
+ 
+*
+**
+***
+****
+*****
+
+
+
+*/
+
+
+
+/*
+
+for (int outer = 1; outer <= 5; outer++)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write("*");
+    }
+
+    Console.WriteLine();
+}
+*/
+
+
+/*
+12345
+1234
+123
+12
+1
+*/
+/*
+for (int outer = 5; outer >= 1; outer--)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+    }
+
+    Console.WriteLine();
+}*/
+
+
+/*
+  
+ 
+*****
+****
+***
+**
+*
+
+
+*/
+
+/*
+for (int outer = 5; outer >= 1; outer--)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write("*");
+    }
+
+    Console.WriteLine();
+}
+*/
+
+
+/*
+  
+ 
+    *
+   **
+  ***
+ ****
+*****
+
+
+*/
+
+/*
+for (int row=1;  row<=5;  row++)
+{ 
+    for ( int space=1; space<=5-row; space++)
+    {
+        Console.Write(" ");
+    }
+    for ( int input=1; input<=row; input++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+
+}*/
+
+
+/*
+    1
+   12
+  123
+ 1234
+12345
+
+ */
+
+/*
+for (int row=1; row<=5;  row++)
+{
+    for (int space=1; space<=5-row; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int input=1; input<=row; input++)
+    {
+        Console.Write(input);
+    }
+    Console.WriteLine();
+}*/
+
+/*
+
+*****1*****
+****1*2****
+***1*2*3***
+**1*2*3*4**
+*1*2*3*4*5*
+
+
+*/
+
+
+/*
+
+1
+12
+123
+1234
+12345
+1234
+123
+12
+1
+
+*/
+
+/*
+for  (int outer = 1; outer <= 5; outer++)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner); 
+    }
+
+    Console.WriteLine();
+}
+
+for (int outer = 4; outer >= 1; outer--)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+    }
+
+    Console.WriteLine();
+}*/
+
+/*
+for (int row = 1; row <= 5; row++)
+{
+    for (int space = 1; space <= 5 - row; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int input = 1; input <= row; input++)
+    {
+        Console.Write(input);
+    }
+    for (int input = 4; input <= row-1; input--)
+    { Console.Write(input); }
+  
+
+    Console.WriteLine();
+    
+}*/
+
+
+
+/*
+1
+22
+333
+4444
+55555
+*/
+
+/*
+for (int outer=1; outer<=5;  outer++)
+{
+    for (int inner=1; inner<=outer; inner++)
+    {
+        Console.Write(outer);
+    }
+    Console.WriteLine();
+}*/
+
+/*
+1
+121
+12321
+1234321
+123454321
+*/
+
+
+
+/*
+    for (int outer=1; outer<=5;  outer++)
+{
+    for (int inner=1; inner<=outer; inner++)
+    {
+        Console.Write(inner);
+
+    }
+    for ( int inner =outer-1; inner>=1; inner--)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+
+}
+*/
+
+
+
+/*
+    1
+   121
+  12321
+ 1234321
+123454321
+*/
+
+
+/*
+for (int outer = 1; outer <= 5; outer++)
+{
+    for (int space = 1; space <= 5 - outer; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+
+    }
+    for (int inner = outer - 1; inner >= 1; inner--)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+
+}
+*/
+
+/*
+1
+21
+321
+4321
+54321
+*/
+/*
+for (int outer=1;  outer<=5;  outer++)
+{
+    for (int inner=outer; inner>=1; inner--)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}*/
+
+/*
+A
+AB
+ABC
+ABCD
+ABCDE
+*/
+
+/*
+for  (int outer=1; outer<=5;  outer++)
+{
+    char ch ='A';
+    for (int inner=1; inner<=outer; inner++)
+    {
+        Console.Write(ch);
+        ch++;
+    }
+    Console.WriteLine();
+
+}
+*/
+
+
+
+/*
+543212345
+ 4321234
+  32123
+   212
+    1
+
+*/
+
+/*
+for (int outer = 5; outer >=1; outer--)
+{
+
+    for ( int space = 5-outer; space >=1; space--)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = outer; inner >= 1; inner--)
+    {
+        Console.Write(inner);
+    }
+    for (int inner = 2; inner <=outer; inner++)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+A
+AB
+ABC
+ABCD
+ABCDE
+*/
+
+
+/*
+for ( int outer=1; outer<=5; outer++ )
+{
+    for ( int inner=1; inner<=outer; inner++ )
+    {
+        Console.Write(Convert.ToChar(64+inner));
+
+    }
+    Console.WriteLine();
+}
+*/
+/*
+    A
+   AB
+  ABC
+ ABCD
+ABCDE
+
+*/
+
+/*
+for (int outer = 1; outer <= 5; outer++)
+{ 
+    for ( int space=1; space <= 5-outer; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(Convert.ToChar(64 + inner));
+
+    }
+    Console.WriteLine();
+}
+*/
+/*
+    A
+   ABA
+  ABCAB
+ ABCDABC
+ABCDEABCD
+
+*/
+
+
+/*
+for (int outer = 1; outer <= 5; outer++)
+{
+    for (int space = 1; space <= 5 - outer; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(Convert.ToChar(64 + inner));
+
+    }
+    for (int inner = 1; inner <= outer-1; inner++)
+    {
+        Console.Write(Convert.ToChar(64 + inner));
+
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+54321
+ 4321
+  321
+   21
+    1
+*/
+
+
+/*
+for (int outer=5; outer>=1; outer--)
+{
+    for (int space=5; space>outer; space--)
+    {
+        Console.Write(" ");
+    }
+    for (int inner=outer; inner>=1; inner--)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}
+*/
+
+/*
+543212345
+ 4321234
+  32123
+   212
+    1
+*/
+
+
+/*
+for (int outer = 5; outer >= 1; outer--)
+{
+    for (int space = 5; space > outer; space--)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = outer; inner >= 1; inner--)
+    {
+        Console.Write(inner);
+    }
+    for (int inner=2; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}
+*/
+
+
+
+/*
+1
+23
+456
+78910
+*/
+/*
+int num = 1;
+
+for (int outer = 1; outer <= 4; outer++)
+{
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(num+"");
+        num++;
+    }
+    Console.WriteLine();
+}*/
+
+/*
+1234
+ 123
+  12
+   1
+*/
+/*
+for ( int outer=4; outer>=1; outer--)
+{
+    for ( int space=4-outer; space>=1; space--)
+    {
+        Console.Write(" ");
+    }
+    for ( int inner=1; inner<=outer; inner++)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}*/
+
+/*
+1234
+ 123
+  12
+   1
+*/
+
+
+/*
+for (int outer = 4; outer >= 1; outer--)
+{
+    for (int space = 4 - outer; space >= 1; space--)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}*/
+/*
+   1
+  21
+ 321
+4321
+*/
+
+
+
+/*
+for ( int outer=1;  outer<=4;  outer++)
+{
+    for ( int space=1; space>=outer-2; space--)
+    {
+        Console.Write(" ");
+    }
+    for ( int inner=outer; inner>=1;  inner--)
+    {
+        Console.Write(inner);
+    }
+    Console.WriteLine();
+}*/
+/*
+   A
+  BAB
+ CBABC
+DCBABCD
+*/
+
+
+/*
+for (int outer = 1; outer <= 4; outer++)
+{
+    for (int space = 1; space >= outer - 2; space--)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = outer; inner >= 1; inner--)
+    {
+        Console.Write(Convert.ToChar(64+inner));
+    }
+    for ( int inner = 2; inner <=outer; inner++)
+    {
+        Console.Write(Convert.ToChar(64+inner));
+    }
+    Console.WriteLine();
+}*/
+
+
+
+/*
+for (int outer = 6; outer >= 1; outer--)
+{
+   *//* for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write(inner);
+    }*//*
+   for (int inner = 1; inner <=5; inner++)
+    {
+        Console.Write(inner);
+    }
+
+
+*//*    for ( int inner = 1; inner < 6-outer; inner++)
+    {
+        Console.Write(" ");
+    }*/
+/*    for (int inner = outer; inner >= 1; inner--)
+    {
+        Console.Write(inner);
+    }*//*
+   // Console.WriteLine();
+}*/
+
+/*
+int length = 6;
+
+for (int i = 1; i <= length; i++)
+{
+    for (int j = 1; j <= (length + 1) - i; j++)
+    {
+        Console.Write(j);
+    }
+    for (int j = 1; j <= i-1; j++)
+    {
+        Console.Write("-");
+    }
+    for (int  j = 1;  j<= i-2; j++)
+    {
+        Console.Write("-");
+
+    }
+    for ( int j=(length+1)-i;  j>=1; j--)
+    {
+        if (j == length)
+        {
+            continue;
+        }
+        Console.Write(j);
+        
+    }
+    
+    Console.WriteLine();
+}
+*/
+/*
+12345654321
+12345 54321
+1234   4321
+123     321
+12       21
+1         1
+
+*/
+
+
+/*
+int row=6;
+
+for ( int outer=1; outer<=row; outer++)
+{
+    for (int inner=1; inner<=(row+1)-outer; inner++)
+    {
+        Console.Write(inner);
+    }
+
+    for (int space=1;  space<=outer-1; space++)
+    { 
+        Console.Write(" "); 
+    }
+    for ( int space=2; space<=outer-1; space++)
+    {
+        Console.Write(" ");
+    }
+    for ( int inner=(row+1)-outer; inner>=1;  inner--)
+    {
+        if (inner==row)
+        {
+            continue;
+        }
+        Console.Write(inner);
+    }
+
+    Console.WriteLine();
+
+}
+*/
+
+/*
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+*/
+
+
+/*
+int row = 5;
+
+for ( int outer=1; outer<=row; outer++ )
+{
+    for ( int inner=1; inner<=outer; inner++ )
+    {
+        Console.Write("*");
+    }
+    for (int space=1; space<=row-outer; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int space=1 ; space<=row-outer ; space++)
+    {
+        Console.Write(" ");
+    }
+    for (int inner=1 ; inner<=outer ; inner++)
+    {
+        Console.Write("*");
+    }
+        
+        Console.WriteLine();
+}
+int row2 = 4;
+for (int outer=row2; outer>=1; outer--)
+{
+    for (int inner=outer ; inner>=1 ; inner--)
+    {
+        Console.Write("*");
+    }
+    for (int space=1; space<=row-outer; space++)
+    {
+        Console.Write(" ");
+    }
+    for ( int space=1 ; space<=row-outer ;space++)
+    {
+        Console.Write(" ");
+    }
+    for (int inner = 1; inner <= outer; inner++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}*/
+
+
+
+/*
+int row = 4;
+
+for (int outer=1; outer<=row; outer++)
+{
+    for (int inner=row-2; inner<=outer; inner++)
+    {
+        Console.Write("-");
+    }
+    for ( int inner=row; inner<=4; inner++)
+    {
+        Console.Write("*");
+    }
+    for ( int space=1; space<=row-outer; space++)
+    {
+        Console.Write("-"); 
+    }
+    for ( int space=2; space<=row-outer; space++)
+    {
+        Console.Write("-");
+    }
+    for ( int inner=1; inner<=row-3 ; inner++)
+    {
+        
+        Console.Write("*");
+    }
+
+    Console.WriteLine();
+}*/
+
+
+/*
+
+*     *
+ *   *
+  * *
+   *
+  * *
+ *   *
+*     *
+
+*/
+
+
+/*
+for ( int outer=1;  outer<=4;  outer++ )
+{
+    for ( int space=2;  space<=outer; space++ )
+    {
+        Console.Write(" ");
+    }
+    Console.Write("*");
+
+    for ( int space=2*outer; space<=6;  space++ )
+    {
+        Console.Write(" ");
+    }
+    
+        if ( outer==4 )
+        {
+        Console.WriteLine();
+        break;
+        }
+        Console.Write("*"); 
+    
+    Console.WriteLine();
+}
+for ( int outer=1; outer<=3; outer++)
+{ 
+    for ( int space=1; space<=3-outer; space++ )
+    {
+        Console.Write(" ");
+    }
+    Console.Write("*");
+
+    for ( int space=1; space<=outer; space++ )
+    {
+        Console.Write(" ");
+    }
+
+    for ( int space=1; space<=outer-1; space++ )
+    {
+        Console.Write(" ");
+    }
+    Console.Write("*");
+    Console.WriteLine();
+}*/
+
+
+
+/*
+
+for (int row = 1; row <= 5; row++)
+
+{
+
+    Console.Write("*");
+
+
+    for (int inner = 1; inner <= row - 2; inner++)
+
+    {
+
+        Console.Write(" ");
+
+    }
+
+
+    if (row != 1)
+
+    {
+
+        Console.Write("*");
+
+    }
+
+
+    for (int inner = 1; inner <= (5 - row) * 2; inner++)
+
+    {
+
+        Console.Write(" ");
+
+    }
+
+    Console.Write("*");
+
+
+    for (int inner = 1; inner <= row - 2; inner++)
+
+    {
+
+        Console.Write(" ");
+
+    }
+
+    if (row != 1)
+
+    {
+
+        Console.Write("*");
+
+    }
+
+
+    Console.WriteLine();
+}*/
+
+/*
+
+
+**********
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+**********
+
+
+*/
+/*
+int row = 10;
+
+for ( int i = 1; i <= row; i++ )
+{
+    for (int j = 1; j <= row; j++)
+    {
+        if (i == 1 || i == row || j == 1 || j == row)
+            Console.Write("*");
+        else
+            Console.Write(" ");
+    }
+    Console.WriteLine();
+}*/
+
+
+//Hollow Pyramid
+
+/*
+int rows = 5;
+
+for (int i = 1; i <= rows; i++)
+{
+    for (int j = 1; j <= rows - i; j++)
+        Console.Write(" ");
+
+    for (int j = 1; j <= 2 * i - 1; j++)
+    {
+        if (j == 1 || j == 2 * i - 1 || i == rows)
+            Console.Write("*");
+        else
+            Console.Write(" ");
+    }
+
+    Console.WriteLine();
+}*/
 
